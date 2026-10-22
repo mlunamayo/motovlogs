@@ -1,4 +1,4 @@
-# motovlog-ops
+# motovlogs
 
 Runbooks y scripts para convertir las grabaciones de moto en TikToks: leer las tarjetas,
 separar por cámara, analizar, recortar, renderizar con el look de la serie, revisar la

@@ -5,7 +5,7 @@
 
 ## Pasos
 
-1. Clona este repo en `C:\Users\<usuario>\Documents\motovlog-ops`.
+1. Clona este repo en `C:\Users\<usuario>\Documents\motovlogs`.
 2. Crea la carpeta de trabajo del asistente: `C:\Users\<usuario>\Documents\StreamDeck\video\`
    con `cola\`, `hechos\` y `logs\` (el asistente las crea solo si no existen).
 3. Copia `scripts\pc\asistente_videos.ps1` y `scripts\render\motor.ps1` a esa carpeta `video\`.
