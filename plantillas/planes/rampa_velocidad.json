@@ -1,0 +1,254 @@
+{
+ "outputs": [
+  {
+   "name": "cine_05_la_horquilla_v2",
+   "ass": "c05b.ass",
+   "segments": [
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1562.5,
+     "dur": 1.8,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 1.8,
+     "fadein": true
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1564.3,
+     "dur": 0.5,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 1.5
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1564.8,
+     "dur": 0.5,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 1.2
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1565.3,
+     "dur": 0.4,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 0.9
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1565.7,
+     "dur": 0.3,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 0.7
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1566.0,
+     "dur": 2.4,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 0.5
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1568.4,
+     "dur": 0.3,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 0.7
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1568.7,
+     "dur": 0.4,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 0.9
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1569.1,
+     "dur": 0.5,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 1.2
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1569.6,
+     "dur": 0.5,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 1.5
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1570.1,
+     "dur": 1.9,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 1.8
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1689.5,
+     "dur": 1.8,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 1.8
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1691.3,
+     "dur": 0.5,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 1.5
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1691.8,
+     "dur": 0.5,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 1.2
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1692.3,
+     "dur": 0.4,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 0.9
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1692.7,
+     "dur": 0.3,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 0.7
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1693.0,
+     "dur": 2.4,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 0.5
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1695.4,
+     "dur": 0.3,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 0.7
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1695.7,
+     "dur": 0.4,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 0.9
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1696.1,
+     "dur": 0.5,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 1.2
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1696.6,
+     "dur": 0.5,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 1.5
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1697.1,
+     "dur": 1.9,
+     "layout": "full",
+     "hdr": true,
+     "rot180": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "speed": 1.8,
+     "fadeout": true
+    }
+   ]
+  }
+ ]
+}

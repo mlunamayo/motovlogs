@@ -1,0 +1,108 @@
+{
+ "outputs": [
+  {
+   "name": "corto_dahlonega",
+   "ass": "k1.ass",
+   "segments": [
+    {
+     "file": "DJI\\DJI_20261018120241_0006_D.MP4",
+     "start": 604,
+     "dur": 3.2,
+     "layout": "full",
+     "hdr": true,
+     "grade": "cine",
+     "vol": 0.0
+    },
+    {
+     "file": "DJI\\DJI_20261018110307_0003_D.MP4",
+     "start": 1689,
+     "dur": 3,
+     "layout": "full",
+     "hdr": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "rot180": true
+    },
+    {
+     "file": "DJI\\DJI_20261018102253_0002_D.MP4",
+     "start": 1153,
+     "dur": 3,
+     "layout": "full",
+     "hdr": true,
+     "grade": "cine",
+     "vol": 0.0
+    },
+    {
+     "file": "DJI\\DJI_20261018120241_0006_D.MP4",
+     "start": 418,
+     "dur": 3,
+     "layout": "full",
+     "hdr": true,
+     "grade": "cine",
+     "vol": 0.0
+    },
+    {
+     "file": "DJI\\DJI_20261018102253_0002_D.MP4",
+     "start": 1341,
+     "dur": 3.2,
+     "layout": "full",
+     "hdr": true,
+     "grade": "cine",
+     "vol": 0.0
+    }
+   ]
+  },
+  {
+   "name": "corto_en_manada",
+   "ass": "k2.ass",
+   "segments": [
+    {
+     "file": "DJI\\DJI_20261018102253_0002_D.MP4",
+     "start": 1146,
+     "dur": 3.2,
+     "layout": "full",
+     "hdr": true,
+     "grade": "cine",
+     "vol": 0.0
+    },
+    {
+     "file": "DJI\\DJI_20261018120241_0006_D.MP4",
+     "start": 296,
+     "dur": 2.6,
+     "layout": "full",
+     "hdr": true,
+     "grade": "cine",
+     "vol": 0.0
+    },
+    {
+     "file": "DJI\\DJI_20261018102253_0002_D.MP4",
+     "start": 752,
+     "dur": 2.6,
+     "layout": "full",
+     "hdr": true,
+     "grade": "cine",
+     "vol": 0.0
+    },
+    {
+     "file": "DJI\\DJI_20261018114336_0005_D.MP4",
+     "start": 128,
+     "dur": 2.8,
+     "layout": "full",
+     "hdr": true,
+     "grade": "cine",
+     "vol": 0.0,
+     "rot180": true
+    },
+    {
+     "file": "DJI\\DJI_20261018120241_0006_D.MP4",
+     "start": 604,
+     "dur": 3.6,
+     "layout": "full",
+     "hdr": true,
+     "grade": "cine",
+     "vol": 0.0
+    }
+   ]
+  }
+ ]
+}

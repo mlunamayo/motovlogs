@@ -1,0 +1,113 @@
+<title>Borradores TikTok Motovlog</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap">
+<style>
+/* Layout: one column checklist of clips, grouped by ride; each card = file name, caption, copy button, done toggle */
+:root {
+  --bg: #f3f4f2; --card: #ffffff; --fg: #1b1f1d; --muted: #5d6762; --line: #dfe3e0;
+  --accent: #d1491f; --accent-ink: #ffffff; --done: #2f7d4f; --chip: #eceeec;
+  --display: "Barlow Condensed", "Arial Narrow", system-ui, sans-serif;
+  --body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #141716; --card: #1d2120; --fg: #ecefed; --muted: #9aa49f; --line: #2d3331;
+  --accent: #f0703f; --accent-ink: #1a0d07; --done: #5cc287; --chip: #262b29; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #141716; --card: #1d2120; --fg: #ecefed; --muted: #9aa49f; --line: #2d3331;
+  --accent: #f0703f; --accent-ink: #1a0d07; --done: #5cc287; --chip: #262b29; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.45;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 20px 48px; }
+.wrap { max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; gap: 22px; }
+h1 { font-family: var(--display); font-weight: 700; font-size: 2.1rem; line-height: 1.05; margin: 0; text-wrap: balance; letter-spacing: .01em; }
+h2 { font-family: var(--display); font-weight: 700; font-size: 1.35rem; margin: 6px 0 0; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.intro { color: var(--muted); margin: 0; max-width: 62ch; }
+.steps { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; color: var(--fg); }
+.progress { font-variant-numeric: tabular-nums; font-weight: 600; }
+.bar { height: 6px; background: var(--chip); border-radius: 3px; overflow: hidden; }
+.bar span { display: block; height: 100%; background: var(--done); width: 0; transition: width .3s; }
+.list { display: flex; flex-direction: column; gap: 12px; }
+.clip { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: grid; gap: 10px; min-width: 0; }
+.clip.done { opacity: .55; }
+.head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+.num { font-family: var(--display); font-weight: 700; font-size: 1.4rem; color: var(--accent); font-variant-numeric: tabular-nums; }
+.file { font-family: ui-monospace, Consolas, monospace; font-size: .8rem; color: var(--muted); word-break: break-all; }
+.text { white-space: pre-wrap; margin: 0; font-size: .97rem; min-width: 0; overflow-wrap: anywhere; }
+.tags { color: var(--muted); }
+.sound { color: var(--muted); font-size: .85rem; font-style: italic; }
+.row { display: flex; gap: 8px; flex-wrap: wrap; }
+button { font: 600 .92rem var(--body); border-radius: 8px; padding: 9px 14px; cursor: pointer; border: 1px solid var(--line); background: var(--chip); color: var(--fg); }
+button.copy { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.clip.done button.mark { background: var(--done); color: var(--card); border-color: var(--done); }
+@media (prefers-reduced-motion: reduce) { .bar span { transition: none; } }
+</style>
+
+<div class="wrap">
+  <header style="display:grid;gap:10px">
+    <h1>Borradores TikTok · Serie cine</h1>
+    <p class="intro">Descripción y 5 hashtags para los 6 videos cinematográficos, en el orden sugerido para publicar. Textos cortos y sin emojis, para que vayan con el estilo de los videos.</p>
+    <ol class="steps">
+      <li>En TikTok toca <b>+</b> y elige el video de la galería.</li>
+      <li>Agrega el sonido desde TikTok (abajo de cada video va una sugerencia del estilo).</li>
+      <li>Pega la descripción y toca <b>Borradores</b>.</li>
+    </ol>
+    <div class="progress" id="prog">0 de 6 listos</div>
+    <div class="bar"><span id="barfill"></span></div>
+  </header>
+  <main id="app"></main>
+</div>
+
+<script>
+const groups = [
+ { title: "Orden para publicar", clips: [
+  ["1", "cine_06_rumbo_v2", "Rumbo a las montañas.\nDahlonega, Georgia · 18.10", "#motovlog #vulcans #dahlonega #georgia #cinematic", "Instrumental que vaya subiendo poco a poco, tipo tráiler."],
+  ["2", "cine_01_dahlonega", "Hay carreteras que no se recorren, se sienten.\nDahlonega · Two Wheels of Suches", "#motovlog #vulcans #dahlonega #blueridge #cinematic", "Piano o guitarra ambiental, lento."],
+  ["3", "cine_04_en_manada", "Mejor en manada.", "#motovlog #vulcans #rodadaengrupo #bikerlife #cinematic", "Algo con ritmo constante, tipo indie o synth suave."],
+  ["4", "cine_05_la_horquilla_v2", "Frena. Inclina. Respira.\nLa horquilla, camino a Suches.", "#motovlog #vulcans #curvas #motociclismo #cinematic", "Un sonido con una caída o pausa que coincida con la cámara lenta."],
+  ["5", "cine_02_gatlinburg_dia1_v2", "Otoño en las Smoky Mountains.\nGatlinburg, día 1.", "#motovlog #vulcans #gatlinburg #smokymountains #otoño", "Acústico cálido, de otoño."],
+  ["6", "cine_03_gatlinburg_dia2_v2", "El segundo día llovió. Igual salimos.\nGatlinburg, día 2.", "#motovlog #vulcans #gatlinburg #lluvia #smokymountains", "Algo melancólico: piano con lluvia o lo-fi lento."]
+ ]}
+];
+const KEY = "tiktok-listos-cine";
+let done = {};
+try { done = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { done = {}; }
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(done)); } catch (e) {} };
+const total = groups.reduce((n, g) => n + g.clips.length, 0);
+function progress() {
+  const n = Object.values(done).filter(Boolean).length;
+  document.getElementById("prog").textContent = n + " de " + total + " listos";
+  document.getElementById("barfill").style.width = (n / total * 100) + "%";
+}
+const app = document.getElementById("app");
+groups.forEach(g => {
+  const sec = document.createElement("section");
+  sec.style.cssText = "display:grid;gap:12px;margin-bottom:18px";
+  const h = document.createElement("h2"); h.textContent = g.title; sec.appendChild(h);
+  const list = document.createElement("div"); list.className = "list";
+  g.clips.forEach(([num, file, cap, tags, sound]) => {
+    const full = cap + "\n\n" + tags;
+    const el = document.createElement("article"); el.className = "clip" + (done[file] ? " done" : "");
+    el.innerHTML = `<div class="head"><span class="num">${num}</span><span class="file">${file}.mp4</span></div>
+      <p class="text"></p><p class="text tags"></p><p class="text sound"></p>
+      <div class="row"><button class="copy" type="button" id="c${num}">Copiar texto</button><button class="mark" type="button" id="m${num}">${done[file] ? "Listo ✓" : "Marcar listo"}</button></div>`;
+    el.querySelector(".text").textContent = cap;
+    el.querySelector(".tags").textContent = tags;
+    el.querySelector(".sound").textContent = "Sonido: " + sound;
+    const cbtn = el.querySelector(".copy");
+    cbtn.addEventListener("click", () => {
+      const ok = () => { cbtn.textContent = "Copiado"; setTimeout(() => cbtn.textContent = "Copiar texto", 1500); };
+      const fallback = () => { const r = document.createRange(); r.selectNodeContents(el.querySelector(".text")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); cbtn.textContent = "Selecciona y copia"; };
+      try { navigator.clipboard.writeText(full).then(ok, fallback); } catch (e) { fallback(); }
+    });
+    el.querySelector(".mark").addEventListener("click", e => {
+      done[file] = !done[file]; save();
+      el.classList.toggle("done", !!done[file]);
+      e.target.textContent = done[file] ? "Listo ✓" : "Marcar listo";
+      progress();
+    });
+    list.appendChild(el);
+  });
+  sec.appendChild(list); app.appendChild(sec);
+});
+progress();
+</script>

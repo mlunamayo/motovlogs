@@ -1,0 +1,12 @@
+# Secretos y datos privados: nunca a git
+.private/
+**/config.txt
+**/token.json
+**/subidos.txt
+# Material pesado o efimero
+*.mp4
+*.MP4
+*.insv
+*.zip
+.runtime/
+logs/

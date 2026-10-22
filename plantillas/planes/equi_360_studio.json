@@ -1,0 +1,140 @@
+{
+ "outputs": [
+  {
+   "name": "cine_02_gatlinburg_dia1_v2",
+   "ass": "c02b.ass",
+   "segments": [
+    {
+     "file": "G:\\Motovlog\\2026-10-21\\st_002_s1397.mp4",
+     "start": 15,
+     "dur": 6,
+     "layout": "equi",
+     "yaw": 0,
+     "pitch": 4,
+     "grade": "cine",
+     "vol": 0.0,
+     "fadein": true
+    },
+    {
+     "file": "G:\\Motovlog\\2026-10-21\\st_002_s1397.mp4",
+     "start": 21,
+     "dur": 5,
+     "layout": "equi",
+     "yaw": 180,
+     "pitch": -3,
+     "grade": "cine",
+     "vol": 0.0
+    },
+    {
+     "file": "G:\\Motovlog\\2026-10-21\\st_003_s601.mp4",
+     "start": 6,
+     "dur": 7,
+     "layout": "equi",
+     "yaw": 0,
+     "pitch": 4,
+     "grade": "cine",
+     "vol": 0.0
+    },
+    {
+     "file": "G:\\Motovlog\\2026-10-21\\st_003_s601.mp4",
+     "start": 27,
+     "dur": 5,
+     "layout": "equi",
+     "yaw": 180,
+     "pitch": -3,
+     "grade": "cine",
+     "vol": 0.0
+    },
+    {
+     "file": "G:\\Motovlog\\2026-10-21\\st_001_s601.mp4",
+     "start": 3,
+     "dur": 6,
+     "layout": "equi",
+     "yaw": 0,
+     "pitch": 4,
+     "grade": "cine",
+     "vol": 0.0
+    },
+    {
+     "file": "G:\\Motovlog\\2026-10-21\\st_003_s601.mp4",
+     "start": 30,
+     "dur": 7,
+     "layout": "equi",
+     "yaw": 0,
+     "pitch": 4,
+     "grade": "cine",
+     "vol": 0.0,
+     "fadeout": true
+    }
+   ]
+  },
+  {
+   "name": "cine_03_gatlinburg_dia2_v2",
+   "ass": "c03b.ass",
+   "segments": [
+    {
+     "file": "G:\\Motovlog\\2026-10-21\\st_011_s600.mp4",
+     "start": 0,
+     "dur": 7,
+     "layout": "equi",
+     "yaw": 0,
+     "pitch": 4,
+     "grade": "cine",
+     "vol": 0.0,
+     "fadein": true
+    },
+    {
+     "file": "G:\\Motovlog\\2026-10-21\\st_006_s656.mp4",
+     "start": 20,
+     "dur": 5,
+     "layout": "equi",
+     "yaw": 180,
+     "pitch": -3,
+     "grade": "cine",
+     "vol": 0.0
+    },
+    {
+     "file": "G:\\Motovlog\\2026-10-21\\st_006_s656.mp4",
+     "start": 39,
+     "dur": 7,
+     "layout": "equi",
+     "yaw": 0,
+     "pitch": 4,
+     "grade": "cine",
+     "vol": 0.0
+    },
+    {
+     "file": "G:\\Motovlog\\2026-10-21\\st_008_s159.mp4",
+     "start": 36,
+     "dur": 5,
+     "layout": "equi",
+     "yaw": 180,
+     "pitch": -3,
+     "grade": "cine",
+     "vol": 0.0
+    },
+    {
+     "file": "G:\\Motovlog\\2026-10-21\\st_008_s159.mp4",
+     "start": 57,
+     "dur": 6,
+     "layout": "equi",
+     "yaw": 0,
+     "pitch": 4,
+     "grade": "cine",
+     "vol": 0.0
+    },
+    {
+     "file": "G:\\Motovlog\\2026-10-21\\st_006_s656.mp4",
+     "start": 60,
+     "dur": 7,
+     "layout": "equi",
+     "yaw": 0,
+     "pitch": 4,
+     "grade": "cine",
+     "vol": 0.0,
+     "fadeout": true
+    }
+   ]
+  }
+ ]
+}

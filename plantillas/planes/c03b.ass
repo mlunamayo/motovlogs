@@ -1,0 +1,15 @@
+﻿[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Titulo,Segoe UI Light,50,&H00FFFFFF,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,8,0,1,0,2,2,60,60,380,1
+Style: Firma,Segoe UI Light,34,&H00E6E6E6,&H00FFFFFF,&H00000000,&H96000000,0,0,0,0,100,100,4,0,1,0,2,2,60,60,300,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.60,0:00:03.80,Titulo,,0,0,0,,{\fad(600,600)}gatlinburg · día 2
+Dialogue: 0,0:00:32.80,0:00:35.80,Firma,,0,0,0,,{\fad(500,500)}@marto_1709
