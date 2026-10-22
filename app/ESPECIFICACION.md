@@ -13,7 +13,7 @@ Lee antes `AGENTS.md`, `conocimiento/aprendizajes.md` y `runbooks/02` a `runbook
 ## Stack (decidido, no cambiar sin preguntar)
 
 - **Python 3.11+** con **Flask** y una página HTML/JS sin paso de compilación (sin React, sin Node).
-- Se abre en el navegador en `http://127.0.0.1:8765`. Solo escucha en localhost.
+- Por corrección explícita de Martin, se abre como **app de escritorio**, en una ventana propia con pywebview y WebView2 en Windows, sin barra ni pestañas del navegador. Flask queda como servidor interno en `http://127.0.0.1:8765`, solo en localhost; termina al cerrar la ventana.
 - Usa los scripts existentes donde ya funcionan (PowerShell + ffmpeg en `scripts/`). Lo nuevo,
   en Python. Rutas con `pathlib`, para que más adelante corra en Mac.
 - Configuración en `app/config.json` (se crea desde `app/config.ejemplo.json` al instalar):
@@ -26,7 +26,7 @@ Lee antes `AGENTS.md`, `conocimiento/aprendizajes.md` y `runbooks/02` a `runbook
 - `app/instalar.ps1`: comprueba Python (si falta, indica cómo instalarlo), crea `.venv`,
   instala `requirements.txt`, descarga ffmpeg si no existe (misma fuente que
   `scripts/analisis/01_instalar_y_revisar.ps1`), crea `config.json` y deja en el escritorio el
-  acceso directo **"Motovlogs"**, que arranca el servidor y abre el navegador.
+  acceso directo **"Motovlogs"**, que abre la ventana de escritorio y su servidor interno.
 - Correr `instalar.ps1` dos veces no rompe nada (idempotente).
 
 ## Pantalla única: 6 pestañas

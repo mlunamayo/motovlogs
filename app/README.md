@@ -6,7 +6,7 @@ Con Python 3.11 o superior instalado, abre PowerShell en el repositorio y ejecut
 powershell -NoProfile -ExecutionPolicy Bypass -File .\app\instalar.ps1
 ```
 
-Abre **Motovlogs** en el escritorio. La aplicación vive en http://127.0.0.1:8765 y solo acepta conexiones locales. Repetir la instalación conserva la configuración. Para detenerla, termina el proceso Python de Motovlogs en el Administrador de tareas.
+Abre **Motovlogs** en el escritorio: aparece una ventana propia, sin navegador ni consola. Repetir la instalación conserva la configuración. Al cerrar la ventana termina su servidor interno; si hay trabajos en marcha, la app espera a que terminen o canceles la copia. Un segundo clic en el acceso directo trae la ventana existente al frente. Windows necesita Microsoft Edge WebView2 Runtime (incluido en la mayoría de los PC actuales).
 
 1. **Cámaras**: busca tarjetas con DCIM y cámaras USB, copia lo nuevo y consulta archivo, velocidad y tiempo restante en Trabajos. Cancelar conserva los originales y quita el archivo parcial local. En MTP, la transferencia del dispositivo puede terminar en la carpeta temporal; no desconectes hasta que se detenga.
 2. **Grabaciones**: actualiza las fechas, pulsa Analizar y toca una celda de la hoja para añadir ese segundo al editor. Se reutilizan las hojas ya generadas por la app. La ficha muestra tamaño, duración, resolución, fps y HDR.
