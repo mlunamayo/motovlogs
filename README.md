@@ -32,3 +32,7 @@ conocimiento/             lo aprendido (qué funcionó, qué no, por qué)
 
 Tarjetas → `nueva_grabacion.ps1` → análisis (hojas de contacto) → plan JSON → `motor.ps1`
 → revisión (hoja de control) → teléfono / borradores TikTok → analíticas a las 24 h.
+
+## App
+
+`app/ESPECIFICACION.md`: especificación de la app local "Motovlogs" (una sola ventana para todo el flujo).

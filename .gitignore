@@ -10,3 +10,6 @@
 *.zip
 .runtime/
 logs/
+app/.venv/
+app/config.json
+app/datos/
