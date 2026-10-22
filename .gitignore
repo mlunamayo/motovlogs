@@ -13,3 +13,5 @@ logs/
 app/.venv/
 app/config.json
 app/datos/
+__pycache__/
+.pytest_cache/
