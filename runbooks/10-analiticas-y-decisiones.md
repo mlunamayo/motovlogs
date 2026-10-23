@@ -22,7 +22,7 @@ Martin manda una captura de **Video analysis → Overview** de TikTok.
 | Video | Duración | Vistas | Prom. visto | Completo | Nota |
 |---|---|---|---|---|---|
 | Smokies v1 (primer video) | ~60 s | 54 | 4.9 s | 2% | sin gancho |
-| rumbo a las montañas (cine) | 38 s | 30 (1.5 h) | 5.5 s | 2.86% | abre con semáforo; distribución cortada |
+| rumbo a las montañas (cine) | 38 s | 168 (24 h) | 6.3 s | 2.72% | abre con semáforo; 7 likes, retención 16%; pico en la 1ª hora |
 | corto_dahlonega (gancho, 15 s) | 15 s | — | — | — | pendiente |
 
 Umbral de "funciona": promedio ≥ 8 s y completo ≥ 5% a las 24 h.
